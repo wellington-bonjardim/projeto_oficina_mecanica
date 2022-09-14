@@ -9,6 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/438b2365a2.js" crossorigin="anonymous"></script>
 
@@ -16,8 +21,81 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      
+      <header>
+        <h2>Oficina Mecânica</h2>
+      </header>
 
+      <div class="container menu">
+        <div class="row">
+          <div class="col d-flex justify-content-center mb-4">
+            <a href="novo_servico.php">
+              <button class="btn btn-lg mr-2">Novo serviço</button>
+            </a>
+            <a href="index.php">
+              <button class="btn btn-lg">Todos os serviços</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container conteudo">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">NOME</th>
+                  <th scope="col">CONTATO</th>
+                  <th scope="col">SERVIÇO</th>
+                  <th scope="col">VALOR</th>
+                  <th scope="col">SITUAÇÃO</th>
+                  <th scope="col">AÇÃO</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Wellington</td>
+                  <td>(21) 91234-5678</td>
+                  <td>Troca dos amortecedores</td>
+                  <td>250</td>
+                  <td>PAGO</td>
+                  <td>
+                    <i class="fa-solid fa-trash fa-xl"></i>
+                    <i class="fa-solid fa-square-check fa-xl"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nelson</td>
+                  <td>(21) 91234-5678</td>
+                  <td>Troca de Óleo</td>
+                  <td>150</td>
+                  <td>PAGO</td>
+                  <td>
+                    <i class="fa-solid fa-trash fa-xl"></i>
+                    <i class="fa-solid fa-square-check fa-xl"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Edinho</td>
+                  <td>(21) 91234-5678</td>
+                  <td>Cabeçote</td>
+                  <td>700</td>
+                  <td>PENDENTE</td>
+                  <td>
+                    <i class="fa-solid fa-trash fa-xl"></i>
+                    <i class="fa-solid fa-square-check fa-xl"></i>
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      
 
   
     <!-- Optional JavaScript -->
