@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/438b2365a2.js" crossorigin="anonymous"></script>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="container formulario border border-secondary p-4 d-flex justify-content-center">
+      <div class="container formulario border p-4 d-flex justify-content-center">
         <form method="POST" action="index.php">
           <div class="form-row">
             <div class="form-group col-md-6">

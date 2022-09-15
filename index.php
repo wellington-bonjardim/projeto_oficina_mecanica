@@ -1,3 +1,6 @@
+<?php 
+  require 'servico_controller.php';
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -18,7 +21,7 @@
     <script src="https://kit.fontawesome.com/438b2365a2.js" crossorigin="anonymous"></script>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
       <header>
