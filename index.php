@@ -2,6 +2,7 @@
   $acao = 'recuperar';
   require 'servico_controller.php';
 ?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -23,6 +24,7 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
       <header>
@@ -91,8 +93,8 @@
                     <i class="fa-solid fa-square-check fa-xl"></i>
                   </td>
                 </tr>
-              </tbody>
 
+              </tbody>
             </table>
           </div>
         </div>
