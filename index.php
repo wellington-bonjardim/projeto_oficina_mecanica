@@ -1,4 +1,5 @@
 <?php 
+  $acao = 'recuperar';
   require 'servico_controller.php';
 ?>
 <!doctype html>

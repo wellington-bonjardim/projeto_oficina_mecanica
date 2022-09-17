@@ -40,11 +40,11 @@
       </div>
 
       <div class="container formulario border p-4 d-flex justify-content-center">
-        <form method="POST" action="index.php">
+        <form method="POST" action="servico_controller.php?acao=inserir">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="nome">Nome</label>
-              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+              <label>Nome</label>
+              <input type="text" class="form-control" name="nome" placeholder="Nome">
             </div>
             <div class="form-group col-md-6">
               <label for="contato">Contato</label>
