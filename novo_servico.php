@@ -48,7 +48,7 @@
             </div>
             <div class="form-group col-md-6">
               <label for="contato">Contato</label>
-              <input type="text" class="form-control" name="contato" id="contato" placeholder="Ex: (21)91234-5678">
+              <input type="text" class="form-control" name="contato" id="contato" placeholder="Ex: 912345678">
             </div>
             <div class="form-group col-md-10">
               <label for="servico">Serviço</label>
@@ -61,9 +61,9 @@
             <div class="col-md-12 d-flex justify-content-center">
               <div class="form-group col-md-2">
                 <label for="situacao">Situação</label>
-                <select name="situacao" id="situacao" class="form-control text-center  mb-3">
-                    <option value="1">PAGO</option>
-                    <option value="2">PENDENTE</option>
+                <select name="situacao" id="situacao" class="form-control text-center mb-3">
+                    <option value="1">PENDENTE</option>
+                    <option value="2">PAGO</option>
                 </select>
               </div>
             </div>
