@@ -43,8 +43,8 @@
         <form method="POST" action="servico_controller.php?acao=inserir">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label>Nome</label>
-              <input type="text" class="form-control" name="nome" placeholder="Nome">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
             </div>
             <div class="form-group col-md-6">
               <label for="contato">Contato</label>
