@@ -70,7 +70,6 @@
             <div class="form-group col-md-12 d-flex justify-content-center align-items-center text-center">
               <button class= "btn btn-cadastrar btn-lg">Cadastrar</button>
             </div>
-            
           </div>
         </form>
       </div>
