@@ -44,19 +44,19 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="nome">Nome</label>
-              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
             </div>
             <div class="form-group col-md-6">
               <label for="contato">Contato</label>
-              <input type="text" class="form-control" name="contato" id="contato" placeholder="Ex: 912345678">
+              <input type="text" class="form-control" name="contato" id="contato" placeholder="Ex: 912345678" required>
             </div>
             <div class="form-group col-md-10">
               <label for="servico">Serviço</label>
-              <input type="text" class="form-control" name="servico" id="servico" placeholder="Serviço">
+              <input type="text" class="form-control" name="servico" id="servico" placeholder="Serviço realizado" required>
             </div>
             <div class="form-group col-md-2">
               <label for="valor">Valor</label>
-              <input type="text" class="form-control" name="valor" id="valor" placeholder="Ex: 150.50">
+              <input type="text" class="form-control" name="valor" id="valor" placeholder="Ex: 150.50" required>
             </div>
             <div class="col-md-12 d-flex justify-content-center">
               <div class="form-group col-md-2">
@@ -73,10 +73,7 @@
           </div>
         </form>
       </div>
-
-
-
-
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -84,14 +81,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!-- 
-      Na criação da tabela, fazer o seguinte para que as informações ocupem os lugares corretos:
-
-        nome.value = <?= $servico -> nome ?>
-        contato.value = <?= $servico -> contato ?>
-        serviço.value = <?= $servico -> servico ?>
-        valor.value = <?= $servico -> valor ?>
-        situacao.value = <?= $servico -> status ?> 
-        acao.value = <?= $servico -> acao ?> 
-      -->

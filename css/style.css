@@ -26,7 +26,7 @@ header h2 {
 /*--------------- MENU BUTTON / FORM BUTTON ---------------*/
 .menu .btn,
 .formulario form .btn-cadastrar {
-    background-color: rgb(49, 49, 236);
+    background-color: black;
     color: yellow;
     font-weight: bold;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,14 +36,14 @@ header h2 {
 
 .menu .btn:hover,
 .formulario form .btn-cadastrar:hover {
-    background-color: blue;
-    color: yellow;
+    background-color: yellow;
+    color: black;
     scale: 1.03;
 }
 
 /*--------------- CONTEUDO TABLE ---------------*/
 thead tr {
-    background-color: rgb(49, 49, 236);
+    background-color: black;
     color: yellow;
     letter-spacing: 0.3rem;
 }
