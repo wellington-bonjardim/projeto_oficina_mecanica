@@ -1,7 +1,7 @@
 <?php 
-    require "../../projeto_oficina/servico.model.php";
-    require "../../projeto_oficina/servico.service.php";
-    require "../../projeto_oficina/conexao.php";
+    require "../../../projeto_oficina_local/servico.model.php";
+    require "../../../projeto_oficina_local/servico.service.php";
+    require "../../../projeto_oficina_local/conexao.php";
 
     $acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
