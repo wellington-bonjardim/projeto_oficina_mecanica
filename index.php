@@ -1,6 +1,12 @@
 <?php 
+
   $acao = 'recuperar';
   require 'servico_controller.php';
+
+  /* echo '<pre>';
+  print_r($servicos);
+  echo '</pre>'; */
+
 ?>
 
 <!doctype html>
@@ -24,6 +30,18 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      
+      function remover(id) {
+        location.href = 'index.php?acao=remover&id='+id
+      }
+
+      function servicoPago(id) {
+        location.href = 'index.php?acao=servicoPago&id='+id
+      }
+
+    </script>
 
   </head>
   <body>
@@ -60,40 +78,23 @@
               </thead>
 
               <tbody>
+                
+              <?php foreach($servicos as $indice => $servico) {?>
                 <tr>
-                  <td>Wellington</td>
-                  <td>(21) 91234-5678</td>
-                  <td>Troca dos amortecedores</td>
-                  <td>250</td>
-                  <td>PAGO</td>
+                  <td> <?= $servico -> nome ?> </td>
+                  <td><?= $servico -> contato ?></td>
+                  <td><?= $servico -> servico ?></td>
+                  <td><?= $servico -> valor ?></td>
+                  <td><?= $servico -> situacao ?></td>
                   <td>
-                    <i class="fa-solid fa-trash fa-xl"></i>
-                    <i class="fa-solid fa-square-check fa-xl"></i>
+                    <i class="fa-solid fa-trash fa-xl" onclick="remover(<?= $servico -> id ?>)"></i>
+                    <?php if($servico->situacao == 'PENDENTE') { ?>
+                      <i class="fa-solid fa-square-check fa-xl" onclick="servicoPago(<?= $servico -> id ?>)"></i>
+                    <?php }?>
                   </td>
                 </tr>
-                <tr>
-                  <td>Nelson</td>
-                  <td>(21) 91234-5678</td>
-                  <td>Troca de Óleo</td>
-                  <td>150</td>
-                  <td>PAGO</td>
-                  <td>
-                    <i class="fa-solid fa-trash fa-xl"></i>
-                    <i class="fa-solid fa-square-check fa-xl"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Edinho</td>
-                  <td>(21) 91234-5678</td>
-                  <td>Cabeçote</td>
-                  <td>700</td>
-                  <td>PENDENTE</td>
-                  <td>
-                    <i class="fa-solid fa-trash fa-xl"></i>
-                    <i class="fa-solid fa-square-check fa-xl"></i>
-                  </td>
-                </tr>
-
+              <?php } ?>
+                
               </tbody>
             </table>
           </div>
